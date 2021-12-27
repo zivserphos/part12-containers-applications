@@ -1,0 +1,7 @@
+docker exec -it  todo-backend_mongo_1 bash       
+mongo -u root -p example
+showcollections
+showdbs
+use the_database
+db.todos.find({})
+db.todos.insert({text: "zibi bibi" , done: true})
